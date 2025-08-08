@@ -171,6 +171,7 @@ battery_dict = {
     "/History/MaximumVoltage": {"value": None, "textformat": _v},
     "/History/TotalAhDrawn": {"value": None, "textformat": _ah},
     # system
+    "/System/NrOfBatteries": {"value": 0, "textformat": _n},
     "/System/MinVoltageCellId": {"value": None, "textformat": _s},
     "/System/MinCellVoltage": {"value": None, "textformat": _v3},
     "/System/MaxVoltageCellId": {"value": None, "textformat": _s},
