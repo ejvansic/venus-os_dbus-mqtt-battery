@@ -5,7 +5,6 @@
 ## Index
 
 1. [Disclaimer](#disclaimer)
-1. [Supporting/Sponsoring this project](#supportingsponsoring-this-project)
 1. [Purpose](#purpose)
 1. [Config](#config)
 1. [JSON structure](#json-structure)
@@ -21,14 +20,9 @@
 
 ## Disclaimer
 
-I wrote this script for myself. I'm not responsible, if you damage something using my script.
+This is a forked version of mr-manuel's code at https://github.com/mr-manuel/venus-os_dbus-mqtt-battery modified for my own installations adding additional properties
 
-
-## Supporting/Sponsoring this project
-
-You like the project and you want to support me?
-
-[<img src="https://github.md0.eu/uploads/donate-button.svg" height="50">](https://www.paypal.com/donate/?hosted_button_id=3NEVZBDM5KABW)
+I'm not responsible, if you damage something using my updated script.
 
 
 ## Purpose
@@ -230,7 +224,7 @@ This method will fetch automatically all available data for a specific battery f
 
     ```bash
 
-    wget -O /tmp/download_dbus-mqtt-battery.sh https://raw.githubusercontent.com/mr-manuel/venus-os_dbus-mqtt-battery/master/download.sh
+    wget -O /tmp/download_dbus-mqtt-battery.sh https://raw.githubusercontent.com/ejvansic/venus-os_dbus-mqtt-battery/ejv-master/download.sh
 
     bash /tmp/download_dbus-mqtt-battery.sh
 
