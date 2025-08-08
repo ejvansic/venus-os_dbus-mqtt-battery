@@ -3,6 +3,7 @@
 driver_path="/data/etc"
 driver_name="dbus-mqtt-battery"
 github_owner="ejvansic"
+github_branch="ejv-master"
 
 echo ""
 echo ""
@@ -14,7 +15,7 @@ echo -n "Fetch current version numbers..."
 latest_release_stable=$(curl -s https://api.github.com/repos/${github_owner}/venus-os_${driver_name}/releases/latest | grep "tag_name" | cut -d : -f 2,3 | tr -d "\ " | tr -d \" | tr -d \,)
 
 # nightly build
-latest_release_nightly=$(curl -s https://raw.githubusercontent.com/${github_owner}/venus-os_${driver_name}/ejv-master/${driver_name}/${driver_name}.py | grep FirmwareVersion | awk -F'"' '{print $4}')
+latest_release_nightly=$(curl -s https://raw.githubusercontent.com/${github_owner}/venus-os_${driver_name}/${github_branch}/${driver_name}/${driver_name}.py | grep FirmwareVersion | awk -F'"' '{print $4}')
 
 
 echo
@@ -93,7 +94,7 @@ fi
 ## nightly build
 if [ "$version" = "nightly build \"v$latest_release_nightly\"" ]; then
     # download nightly build
-    url="https://github.com/${github_owner}/venus-os_${driver_name}/archive/refs/heads/ejv-master.zip"
+    url="https://github.com/${github_owner}/venus-os_${driver_name}/archive/refs/heads/${github_branch}.zip"
 fi
 
 echo "Downloading from: $url"
