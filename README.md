@@ -1,6 +1,6 @@
 # dbus-mqtt-battery - Emulates a aggregated/physical battery from MQTT data
 
-<small>GitHub repository: [mr-manuel/venus-os_dbus-mqtt-battery](https://github.com/mr-manuel/venus-os_dbus-mqtt-battery)</small>
+<small>GitHub repository: [ejvansic/venus-os_dbus-mqtt-battery](https://github.com/ejvansic/venus-os_dbus-mqtt-battery)</small>
 
 ## Index
 
@@ -20,7 +20,7 @@
 
 ## Disclaimer
 
-This is a forked version of mr-manuel's code at https://github.com/mr-manuel/venus-os_dbus-mqtt-battery modified for my own installations adding additional properties
+This is a forked version of mr-manuel's code at [mr-manuel/venus-os_dbus-mqtt-battery](https://github.com/mr-manuel/venus-os_dbus-mqtt-battery) modified for my own installations adding additional properties
 
 I'm not responsible, if you damage something using my updated script.
 
